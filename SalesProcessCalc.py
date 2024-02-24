@@ -1,5 +1,7 @@
 #Copy your code segments into this file. Please add comments for ease of identifying the parts of the program.
 
+#Dictionary for items to be purchased
+
 Produce = {
   "Bananas (each)": f'🍌 $ {0.35}',
   "Apples (each)": f'🍎 $ {1.50}',
@@ -12,7 +14,7 @@ Produce = {
   "Broccoli (each)": f'🥦 $ {2.50}',
   "Potatoes (each)": f'🥔 $ {0.50}',
   "Onions (each)": f'🧅 $ {1.00}',
-  "Bell Peppers (each)": f'🫑 $ {1.50}',
+  "Bell Peppers (each)": f'🫑  $ {1.50}',
   "Avocados (each)": f'🥑 $ {2.00}',
   "Cucumbers (each)": f'🥒 $ {1.00}',
   "Spinach (per bunch)": f'🍃 $ {3.00}',
@@ -20,7 +22,7 @@ Produce = {
   "Pineapples (each)": f'🍍 $ {4.00}',
   "Watermelons (each)": f'🍉 $ {5.00}',
   "Cantaloupes (each)": f'🍈 $ {3.50}',
-  "Blueberries (per pint)": f'🫐 $ {5.00}',
+  "Blueberries (per pint)": f'🫐  $ {5.00}',
 }
 
 Beverages = {
@@ -116,3 +118,16 @@ FrozenSection = {
   "Frozen Chicken Wings (per bag)": f'🍗 $ {8.00}',
   "Frozen Dumplings (per bag)": f'🥟 $ {6.00}',
 }
+
+#Display the catalog to the user
+
+print("Welcome to the Grocery Store")
+promptAisle = input("What aisle would you like to go to? Produce, Beverages, Bakery, Dairy, Deli, Snacks, or Frozen. Enter: ").upper()
+if promptAisle == "PRODUCE":
+    print("This is the Produce aisle.")
+    for key, val in Produce.items():
+      print(key, val)
+promptProduce = input("What would you like to purchase? Enter: ").upper()
+if promptProduce == "APPLES":
+   print("Apples has been added to your shopping cart.")
+
