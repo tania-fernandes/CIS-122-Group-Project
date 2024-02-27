@@ -116,45 +116,30 @@ frozen = {
   "Frozen Dumplings 🥟 (per bag)": f'$ {6.00}',
 }
 
+aisles = {
+    "PRODUCE": produce,
+    "BEVERAGES": beverages,
+    "BAKERY": bakery,
+    "DAIRY": dairy,
+    "DELI": deli,
+    "SNACKS": snacks,
+    "FROZEN": frozen
+}
+
+
+
 #Display the Catalog to the User
 
 print("Welcome to the Grocery Store.\n")
-promptAisle = input("What aisle would you like to go to? Produce, Beverages, Bakery, Dairy, Deli, Snacks, or Frozen. Enter: ").upper()
 
-#Produce Aisle
-if promptAisle == "PRODUCE":
-    print("\nThis is the Produce aisle.")
-    for key, val in produce.items():
-      print(key, val)
-#Beverages Aisle
-if promptAisle == "BEVERAGES":
-    print("\nThis is the Beverages aisle.")
-    for key, val in beverages.items():
-      print(key, val)
-#Bakery Aisle
-if promptAisle == "BAKERY":
-    print("\nThis is the Bakery aisle.")
-    for key, val in bakery.items():
-      print(key, val)
-#Dairy Aisle
-if promptAisle == "DAIRY":
-    print("\nThis is the Dairy aisle.")
-    for key, val in dairy.items():
-      print(key, val)
-#Deli Aisle
-if promptAisle == "DELI":
-    print("\nThis is the Deli aisle.")
-    for key, val in deli.items():
-      print(key, val)
-#Snacks Aisle
-if promptAisle == "SNACKS":
-    print("\nThis is the Snacks aisle.")
-    for key, val in snacks.items():
-      print(key, val)
-#Frozen Aisle
-if promptAisle == "FROZEN":
-    print("\nThis is the Frozen aisle.")
-    for key, val in frozen.items():
-      print(key, val)
+while True:
+  promptAisle = input("What aisle would you like to go to? Produce, Beverages, Bakery, Dairy, Deli, Snacks, or Frozen. Enter: ").upper()
 
+  if promptAisle in aisles:
+    print(f'\nThis is the {promptAisle.lower()} aisle.')
+    for key, val in aisles[promptAisle].items():
+      print(key, val)
+    break
+  else:
+    print('\nSorry we don't have that aisle.\n')
 
