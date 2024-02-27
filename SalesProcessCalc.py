@@ -2,7 +2,7 @@
 
 #Dictionary for items to be purchased
 
-Produce = {
+produce = {
   "Bananas 🍌 (each):": f'$ {0.35}',
   "Apples 🍎 (each)": f'$ {1.50}',
   "Oranges 🍊 (each)": f'$ {0.75}',
@@ -25,7 +25,7 @@ Produce = {
   "Blueberries 🫐 (per pint)": f'$ {5.00}',
 }
 
-Beverages = {
+beverages = {
   "Water 💧 (per bottle)": f'$ {1.50}',
   "Soda 🥤 (per can)": f'$ {1.25}',
   "Coffee ☕ (per cup)": f'$ {4.00}',
@@ -43,7 +43,7 @@ Beverages = {
   "Hot Chocolate ☕🍫 (per cup)": f'$ {3.50}',
 }
 
-Bakery = {
+bakery = {
   "Bread 🍞 (per loaf)": f'$ {3.50}',
   "Baguette 🥖 (each)": f'$ {2.50}',
   "Croissants 🥐 (per dozen)": f'$ {8.00}',
@@ -58,7 +58,7 @@ Bakery = {
   "Pretzels 🥨 (each)": f'$ {1.50}'
 }
 
-DairyProducts = {
+dairy = {
   "Milk 🥛 (per gallon)": f'$ {4.50}',
   "Butter 🧈 (per pound)": f'$ {4.00}',
   "Cheese 🧀 (per pound)": f'$ {6.00}',
@@ -68,7 +68,7 @@ DairyProducts = {
   "Sour Cream 🍶 (per container)": f'$ {2.50}',
 }
 
-Deli = {
+deli = {
   "Chicken Breast 🍗 (per pound)": f'$ {5.00}',
   "Ground Beef 🥩 (per pound)": f'$ {6.00}',
   "Pork Chops 🐖 (per pound)": f'$ {5.50}',
@@ -88,7 +88,7 @@ Deli = {
   "Hot Dogs 🌭 (per pack)": f'$ {4.00}',
 }
 
-Snacks = {
+snacks = {
   "Potato Chips 🥔 (per bag)": f'$ {3.50}',
   "Popcorn 🍿 (per bag)": f'$ {2.50}',
   "Pretzels 🥨 (per bag)": f'$ {3.00}',
@@ -101,7 +101,7 @@ Snacks = {
   "Beef Jerky 🐄 (per pack)": f'$ {7.00}',
 }
 
-FrozenSection = {
+frozen = {
   "Frozen Pizza 🍕 (per box)": f'$ {8.00}',
   "Frozen Broccoli 🥦 (per bag)": f'$ {3.00}',
   "Ice Cream 🍨 (per pint)": f'$ {5.00}',
@@ -116,15 +116,45 @@ FrozenSection = {
   "Frozen Dumplings 🥟 (per bag)": f'$ {6.00}',
 }
 
-#Display the catalog to the user
+#Display the Catalog to the User
 
-print("Welcome to the Grocery Store")
+print("Welcome to the Grocery Store.\n")
 promptAisle = input("What aisle would you like to go to? Produce, Beverages, Bakery, Dairy, Deli, Snacks, or Frozen. Enter: ").upper()
+
+#Produce Aisle
 if promptAisle == "PRODUCE":
-    print("This is the Produce aisle.")
-    for key, val in Produce.items():
+    print("\nThis is the Produce aisle.")
+    for key, val in produce.items():
       print(key, val)
-promptProduce = input("What would you like to purchase? Enter: ").upper()
-if promptProduce == "APPLES":
-   print("Apples has been added to your shopping cart.")
+#Beverages Aisle
+if promptAisle == "BEVERAGES":
+    print("\nThis is the Beverages aisle.")
+    for key, val in beverages.items():
+      print(key, val)
+#Bakery Aisle
+if promptAisle == "BAKERY":
+    print("\nThis is the Bakery aisle.")
+    for key, val in bakery.items():
+      print(key, val)
+#Dairy Aisle
+if promptAisle == "DAIRY":
+    print("\nThis is the Dairy aisle.")
+    for key, val in dairy.items():
+      print(key, val)
+#Deli Aisle
+if promptAisle == "DELI":
+    print("\nThis is the Deli aisle.")
+    for key, val in deli.items():
+      print(key, val)
+#Snacks Aisle
+if promptAisle == "SNACKS":
+    print("\nThis is the Snacks aisle.")
+    for key, val in snacks.items():
+      print(key, val)
+#Frozen Aisle
+if promptAisle == "FROZEN":
+    print("\nThis is the Frozen aisle.")
+    for key, val in frozen.items():
+      print(key, val)
+
 
