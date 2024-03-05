@@ -3,9 +3,32 @@
 #Dictionary for items to be purchased
 
 produce = {
-  "Bananas 🍌 (each):": f'$ {0.35}',
-  "Apples 🍎 (each)": f'$ {1.50}',
-  "Oranges 🍊 (each)": f'$ {0.75}',
+  "BANANAS": 0.35,
+  "APPLES": 1.50,
+  "ORANGES": 0.75,
+  "STRAWBERRIES": 4.00,
+  "GRAPES": 4.00,
+  "TOMATOES": 1.50,
+  "LETTUCE": 2.50,
+  "CARROTS": 1.50,
+  "BROCCOLI": 2.50,
+  "POTATOES": 0.50,
+  "ONIONS": 1.00,
+  "BELL PEPPERS": 1.50,
+  "AVOCADOS": 2.00,
+  "CUCUMBERS": 1.00,
+  "SPINACH": 3.00,
+  "MANGOES": 3.00,
+  "PINEAPPLES": 4.00,
+  "WATERMELONS": 5.00,
+  "CANTALOUPES": 3.50,
+  "BLUEBERRIES": 5.00,
+}
+
+produceForPrint = {
+  "BANANAS 🍌 (each)": f'$ {0.35}',
+  "APPLES 🍎 (each)": f'$ {1.50}',
+  "ORANGES 🍊 (each)": f'$ {0.75}',
   "Strawberries 🍓 (per pint)": f'$ {4.00}',
   "Grapes 🍇 (per bunch)": f'$ {4.00}',
   "Tomatoes 🍅 (each)": f'$ {1.50}',
@@ -25,7 +48,30 @@ produce = {
   "Blueberries 🫐 (per pint)": f'$ {5.00}',
 }
 
+
+
 beverages = {
+  "WATER": 1.50,
+  "SODA": 1.25,
+  "COFFEE": 4.00,
+  "TEA": 4.50,
+  "ORANGE JUICE": 4.00,
+  "ICED TEA": 3.00,
+  "ENERGY DRINK": 4.00,
+  "SMOOTHIE": 6.00,
+  "LEMONADE": 2.50,
+  "COCONUT WATER": 3.50,
+  "JUICE BOX": 1.00,
+  "ICED COFFEE": 4.00,
+  "WINE": 15.00,
+  "BEER": 10.00,
+  "HOT CHOCOLATE": 3.50,
+}
+
+
+
+
+beveragesForPrint = {
   "Water 💧 (per bottle)": f'$ {1.50}',
   "Soda 🥤 (per can)": f'$ {1.25}',
   "Coffee ☕ (per cup)": f'$ {4.00}',
@@ -43,7 +89,24 @@ beverages = {
   "Hot Chocolate ☕🍫 (per cup)": f'$ {3.50}',
 }
 
+
 bakery = {
+  "BREAD": 3.50,
+  "BAGUETTE": 2.50,
+  "CROISSANTS": 8.00,
+  "CUPCAKES": 5.00,
+  "MOON CAKES": 3.50,
+  "COOKIES": 6.00,
+  "CUSTARDS": 5.00,
+  "DONUTS": 2.00,
+  "PIES": 12.00,
+  "CAKES": 5.00,
+  "BAGELS": 6.00,
+  "PRETZELS": 1.50
+}
+
+
+bakeryForPrint = {
   "Bread 🍞 (per loaf)": f'$ {3.50}',
   "Baguette 🥖 (each)": f'$ {2.50}',
   "Croissants 🥐 (per dozen)": f'$ {8.00}',
@@ -58,7 +121,19 @@ bakery = {
   "Pretzels 🥨 (each)": f'$ {1.50}'
 }
 
+
 dairy = {
+  "MILK": 4.50,
+  "BUTTER": 4.00,
+  "CHEESE": 6.00,
+  "CHOCOLATE MILK": 4.50,
+  "EGGS": 3.00,
+  "YOGURT": 2.50,
+  "SOUR CREAM": 2.50,
+}
+
+
+dairyForPrint = {
   "Milk 🥛 (per gallon)": f'$ {4.50}',
   "Butter 🧈 (per pound)": f'$ {4.00}',
   "Cheese 🧀 (per pound)": f'$ {6.00}',
@@ -69,6 +144,27 @@ dairy = {
 }
 
 deli = {
+  "CHICKEN BREAST": 5.00,
+  "GROUND BEEF": 6.00,
+  "PORK CHOPS": 5.50,
+  "SUSHI": 12.00,
+  "TURKEY": 4.50,
+  "LAMB CHOPS": 12.00,
+  "BACON": 7.00,
+  "GROUND TURKEY": 5.00,
+  "BEEF TENDERLOIN": 15.00,
+  "PORK RIBS": 7.00,
+  "SHRIMP": 15.00,
+  "BEEF SIRLOIN": 9.00,
+  "HAM": 5.00,
+  "CHICKEN THIGHS": 4.00,
+  "VEAL CUTLETS": 14.00,
+  "CANNED TUNA": 3.00,
+  "HOT DOGS": 4.00,
+}
+
+
+deliForPrint = {
   "Chicken Breast 🍗 (per pound)": f'$ {5.00}',
   "Ground Beef 🥩 (per pound)": f'$ {6.00}',
   "Pork Chops 🐖 (per pound)": f'$ {5.50}',
@@ -89,6 +185,21 @@ deli = {
 }
 
 snacks = {
+  "POTATO CHIPS": 3.50,
+  "POPCORN": 2.50,
+  "PRETZELS": 3.00,
+  "TRAIL MIX": 5.00,
+  "NUTS": 6.00,
+  "CHOCOLATE": 2.50,
+  "CRACKERS": 3.50,
+  "RICE CRACKER": 4.00,
+  "SALSA": 3.50,
+  "BEEF JERKY": 7.00,
+}
+
+
+
+snacksForPrint = {
   "Potato Chips 🥔 (per bag)": f'$ {3.50}',
   "Popcorn 🍿 (per bag)": f'$ {2.50}',
   "Pretzels 🥨 (per bag)": f'$ {3.00}',
@@ -101,7 +212,24 @@ snacks = {
   "Beef Jerky 🐄 (per pack)": f'$ {7.00}',
 }
 
+
 frozen = {
+  "FROZEN PIZZA": 8.00,
+  "FROZEN BROCCOLI": 3.00,
+  "ICE CREAM": 5.00,
+  "FROZEN CHICKEN NUGGETS": 5.00,
+  "FROZEN FRENCH FRIES": 3.50,
+  "FROZEN BURRITOS": 4.50,
+  "FROZEN STRAWBERRIES": 4.00,
+  "FROZEN SHRIMP": 10.00,
+  "FROZEN DINNERS": 5.00,
+  "FROZEN WAFFLES": 3.50,
+  "FROZEN CHICKEN WINGS": 8.00,
+  "FROZEN DUMPLINGS": 6.00,
+}
+
+
+frozenForPrint = {
   "Frozen Pizza 🍕 (per box)": f'$ {8.00}',
   "Frozen Broccoli 🥦 (per bag)": f'$ {3.00}',
   "Ice Cream 🍨 (per pint)": f'$ {5.00}',
@@ -117,14 +245,16 @@ frozen = {
 }
 
 aisles = {
-    "PRODUCE": produce,
-    "BEVERAGES": beverages,
-    "BAKERY": bakery,
-    "DAIRY": dairy,
-    "DELI": deli,
-    "SNACKS": snacks,
-    "FROZEN": frozen
+    "PRODUCE": produceForPrint,
+    "BEVERAGES": beveragesForPrint,
+    "BAKERY": bakeryForPrint,
+    "DAIRY": dairyForPrint,
+    "DELI": deliForPrint,
+    "SNACKS": snacksForPrint,
+    "FROZEN": frozenForPrint
 }
+
+shoppingCart = {}
 
 
 
