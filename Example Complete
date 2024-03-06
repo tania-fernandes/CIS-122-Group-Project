@@ -1,0 +1,71 @@
+# Let me know if you guys have any questions, this is just an example I have been working on showing how these pieces can and should interact.
+class Item:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+catalog = [
+    Item("Apple", 1.50),
+    Item("Banana", 0.75),
+    Item("Orange", 1.00),
+    Item("Grapes", 2.50),
+    Item("Watermelon", 3.00)
+]
+
+cart = []
+
+
+def display_catalog():
+    print("Catalog:")
+    for index, item in enumerate(catalog):
+        print(f"{index + 1}. {item.name}: ${item.price}")
+
+
+def add_to_cart(item_index):
+    cart.append(catalog[item_index])
+
+
+def remove_from_cart(item_index):
+    del cart[item_index]
+
+
+def calculate_total_cost():
+    total_cost = sum(item.price for item in cart)
+    return total_cost
+
+
+def apply_sales_tax(total_cost, tax_rate=0.08):
+    sales_tax = total_cost * tax_rate
+    total_cost += sales_tax
+    return total_cost
+
+
+def display_total_cost(total_cost):
+    print(f"Total Cost (including tax): ${total_cost:.2f}")
+
+
+while True:
+    display_catalog()
+    choice = input(
+        "Enter the number corresponding to the item you want to add to the cart (or 'checkout' to proceed): ")
+
+    if choice.lower() == 'checkout':
+        if not cart:
+            print("Your cart is empty. Please add items before proceeding to checkout.")
+            continue
+        else:
+            total_cost = calculate_total_cost()
+            total_cost_with_tax = apply_sales_tax(total_cost)
+            display_total_cost(total_cost_with_tax)
+            break
+    else:
+        try:
+            item_index = int(choice) - 1
+            if 0 <= item_index < len(catalog):
+                add_to_cart(item_index)
+                print(f"{catalog[item_index].name} added to cart.")
+            else:
+                print("Invalid item number. Please try again.")
+        except ValueError:
+            print("Invalid input. Please enter a valid item number or 'checkout'.")
+            continue
