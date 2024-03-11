@@ -26,9 +26,9 @@ produce = {
 }
 
 produceForPrint = {
-  "BANANAS 🍌 (each)": f'$ {0.35}',
-  "APPLES 🍎 (each)": f'$ {1.50}',
-  "ORANGES 🍊 (each)": f'$ {0.75}',
+  "Bananas 🍌 (each)": f'$ {0.35}',
+  "Apples 🍎 (each)": f'$ {1.50}',
+  "Oranges 🍊 (each)": f'$ {0.75}',
   "Strawberries 🍓 (per pint)": f'$ {4.00}',
   "Grapes 🍇 (per bunch)": f'$ {4.00}',
   "Tomatoes 🍅 (each)": f'$ {1.50}',
@@ -37,7 +37,7 @@ produceForPrint = {
   "Broccoli 🥦 (each)": f'$ {2.50}',
   "Potatoes 🥔 (each)": f'$ {0.50}',
   "Onions 🧅 (each)": f'$ {1.00}',
-  "Bell Peppers 🫑 (each)": f'$ {1.50}',
+  "Bell Peppers 🫑  (each)": f'$ {1.50}',
   "Avocados 🥑 (each)": f'$ {2.00}',
   "Cucumbers 🥒 (each)": f'$ {1.00}',
   "Spinach 🍃 (per bunch)": f'$ {3.00}',
@@ -45,7 +45,7 @@ produceForPrint = {
   "Pineapples 🍍 (each)": f'$ {4.00}',
   "Watermelons 🍉 (each)": f'$ {5.00}',
   "Cantaloupes 🍈 (each)": f'$ {3.50}',
-  "Blueberries 🫐 (per pint)": f'$ {5.00}',
+  "Blueberries 🫐  (per pint)": f'$ {5.00}',
 }
 
 
@@ -176,7 +176,7 @@ deliForPrint = {
   "Beef Tenderloin 🥩 (per pound)": f'$ {15.00}',
   "Pork Ribs 🐖 (per pound)": f'$ {7.00}',
   "Shrimp 🦐 (per pound)": f'$ {15.00}',
-  "Beef Sirloin  🥩 (per pound)": f'$ {9.00}',
+  "Beef Sirloin 🥩 (per pound)": f'$ {9.00}',
   "Ham 🐖 (per pound)": f'$ {5.00}',
   "Chicken Thighs 🍗 (per pound)": f'$ {4.00}',
   "Veal Cutlets 🐄 (per pound)": f'$ {14.00}',
@@ -208,7 +208,7 @@ snacksForPrint = {
   "Chocolate 🍫 (per bar)": f'$ {2.50}',
   "Crackers 🍪 (per box)": f'$ {3.50}',
   "Rice Cracker 🍘 (per pack)": f'$ {4.00}',
-  "Salsa 🍅🌶️ (per jar)": f'$ {3.50}',
+  "Salsa 🍅🌶️  (per jar)": f'$ {3.50}',
   "Beef Jerky 🐄 (per pack)": f'$ {7.00}',
 }
 
@@ -223,7 +223,7 @@ frozen = {
   "FROZEN STRAWBERRIES": 4.00,
   "FROZEN SHRIMP": 10.00,
   "FROZEN DINNERS": 5.00,
-  "FROZEN WAFFLES": 3.50,
+  "FROZEN WAFFFLES": 3.50,
   "FROZEN CHICKEN WINGS": 8.00,
   "FROZEN DUMPLINGS": 6.00,
 }
@@ -238,7 +238,7 @@ frozenForPrint = {
   "Frozen Burritos 🌯 (per pack)": f'$ {4.50}',
   "Frozen Strawberries 🍓 (per bag)": f'$ {4.00}',
   "Frozen Shrimp 🦐 (per bag)": f'$ {10.00}',
-  "Frozen Dinners 🍽️ (per meal)": f'$ {5.00}',
+  "Frozen Dinners 🍽️  (per meal)": f'$ {5.00}',
   "Frozen Waffles 🧇 (per box)": f'$ {3.50}',
   "Frozen Chicken Wings 🍗 (per bag)": f'$ {8.00}',
   "Frozen Dumplings 🥟 (per bag)": f'$ {6.00}',
