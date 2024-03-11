@@ -271,5 +271,6 @@ while True:
       print(key, val)
     break
   else:
-    print('\nSorry we don't have that aisle.\n')
+    print('\nSorry we dont have that aisle, or you spelled the aisle wrong.\n')
+
 
