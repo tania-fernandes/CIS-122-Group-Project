@@ -253,11 +253,6 @@ aisles = {
     "SNACKS": snacksForPrint,
     "FROZEN": frozenForPrint
 }
-
-shoppingCart = {}
-
-
-
 #Display the Catalog to the User
 
 print("Welcome to the Grocery Store.\n")
@@ -273,4 +268,50 @@ while True:
   else:
     print('\nSorry we dont have that aisle, or you spelled the aisle wrong.\n')
 
+# Shopping cart
+shopping_cart = {}
 
+# Shopping cart options
+print("""
+Shopping Cart Options
+----------------------
+1: Add item
+2: Remove item
+3: View Basket
+0: Exit Program
+""")
+
+option = int(input("Enter an Option: "))
+
+# displaying options
+while option != 0:
+    if option == 1:
+        item = input("Enter an item: ")
+
+        # adding items & quantity to the shopping cart
+        if item in shopping_cart:
+            print("Item already in shopping cart!")
+            qnty = int(input("Enter the quantity: "))
+            shopping_cart[item] += qnty
+        else:
+            qnty = int(input("Enter the quantity: "))
+            shopping_cart[item] = qnty
+
+    # Delete items from cart
+    elif option == 2:
+        item = input("Enter an item: ")
+        del (shopping_cart[item])
+        print(item, "has been removed!")
+
+    # Displays cart, (full or empty)
+    elif option == 3:
+        if not shopping_cart:
+            print("Your cart is empty :(")
+        else:
+            print("Shopping cart:", shopping_cart)
+
+    elif option != 0:
+        print("Please enter a number from the options above!")
+
+    option = int(input("\n\nEnter an option: "))
+    
