@@ -98,6 +98,8 @@ while option != 0:
     elif option == 2:
         item = input("Enter an item: ")
         del(shopping_cart[item])
+        print(item, "has been removed!")
+
 
     elif option == 3:
         if not shopping_cart:
