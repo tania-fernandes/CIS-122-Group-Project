@@ -211,7 +211,7 @@ while option != 0:
         item = input("Enter an item: ").upper()
         if item in shopping_cart:
             del shopping_cart[item]
-            print(item, "has been removed!")
+            print(f"We have removed {item.lower()} from the cart.")
         else:
             print("Item not found in the shopping cart!")
     elif option == 3:
