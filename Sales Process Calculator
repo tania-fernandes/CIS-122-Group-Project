@@ -197,7 +197,7 @@ while True:
                 print(f"Price for {item} is not valid.")
         break
     else:
-        print('\nSorry we don't have that aisle, or you spelled the aisle wrong.\n')
+        print("\nSorry we don't have that aisle, or you spelled the aisle wrong.\n")
 
 # Initialize shopping cart
 shopping_cart = {}
@@ -254,7 +254,7 @@ while option != 0:
                     except ValueError:
                         print("Invalid input! Please enter a valid quantity.")
         else:
-            print("Sorry, that item is not available in this aisle or you mispelled the item.")
+            print("\nSorry, that item is not available in this aisle or you mispelled the item.\n")
     elif option == 2:
         # Remove item functionality
         item = input("Enter an item: ").upper()
