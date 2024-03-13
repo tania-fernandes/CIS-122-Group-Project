@@ -161,6 +161,7 @@ Shopping Cart Options
 1: Add item
 2: Remove item
 3: View Basket
+4: View Aisle Items again
 0: Exit Program
 """)
 
@@ -168,7 +169,7 @@ Shopping Cart Options
 while True:
     try:
         option = int(input("Enter an Option: "))
-        if option in [0, 1, 2, 3]:
+        if option in [0, 1, 2, 3, 4]:
             break
         else:
             print("Invalid option! Please enter a valid option.")
@@ -232,11 +233,21 @@ while option != 0:
             print(f"Sales Tax ({SALES_TAX_RATE * 100}%): ${sales_tax:.4f}")
             print(f"Total Cost: ${total_cost:.2f}")
 
+    # View aisles again without scrolling
+    elif option == 4:
+        if prompt_aisle in aisles:
+            print(f'\nThis is the {prompt_aisle.lower()} aisle.')
+            for item, price in aisles[prompt_aisle].items():
+                if isinstance(price, (int, float)):
+                    print(item, price)
+                else:
+                    print(f"Price for {item} is not valid.")
+
     # Get the next option from the user
     while True:
         try:
             option = int(input("\n\nEnter an option: "))
-            if option in [0, 1, 2, 3]:
+            if option in [0, 1, 2, 3, 4]:
                 break
             else:
                 print("Invalid option! Please enter a valid option.")
