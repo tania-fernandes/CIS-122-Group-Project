@@ -237,12 +237,12 @@ def calculate_total_cost(shopping_cart, prompt_aisle):
 
 # Display the Catalog to the User
 print("""
-                                                                                    _______________________
-                                                                                    |                     |
-                                                                                    |                     |
-                                                                                    |       Welcome       |
-                                                                                    |                     |
-                                                                                    |_____________________|
+                                                                            _______________________
+                                                                            |                     |
+                                                                            |                     |
+                                                                            |       Welcome       |
+                                                                            |                     |
+                                                                            |_____________________|
 
 """)
 
@@ -318,12 +318,18 @@ while option != 0:
             print("\nSorry, that item is not available in this aisle or you misspelled the item.\n")
     elif option == 2:
         # Remove item functionality
-        item = input("Enter an item: ").upper()
-        if item in shopping_cart:
-            del shopping_cart[item]
-            print(f"We have removed {item.lower()} from the cart.")
-        else:
-            print("Item not found in the shopping cart, perhaps you mispelled it.")
+        while True:
+            item = input("Enter an item: ").upper()
+            delAllOfItem = input(f"Would you like to delete all {item} Enter yes or no: ")
+            if item in shopping_cart:
+                if delAllOfItem == "yes":
+                    del shopping_cart[item]
+                    print(f"We have removed {item.lower()} from the cart.")
+                    break
+                else:
+                    print("Item has not been removed.")
+            else:  
+                print("That item is not in the shopping cart.")
 
     elif option == 3:
         # View Basket functionality
@@ -350,6 +356,7 @@ while option != 0:
                     print(item, price)
                 else:
                     print(f"Price for {item} is not valid.")
+    
 
     # Get the next option from the user
     while True:
