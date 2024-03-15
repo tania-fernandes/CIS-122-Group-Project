@@ -1,5 +1,58 @@
-# Sales Tax for WA State
-SALES_TAX_RATE = 0.065
+# Sales Tax for all States
+
+SALES_TAX_RATE = {
+    "ALABAMA": 0.04,
+    "ALASKA": 0.00,
+    "ARIZONA": 0.056,
+    "ARKANSAS": 0.065,
+    "CALIFORNIA": 0.0725,
+    "COLORADO": 0.029,
+    "CONNECTICUT": 0.0635,
+    "DELAWARE": 0.00,
+    "FLORIDA": 0.06,
+    "GEORGIA": 0.04,
+    "HAWAII": 0.04,
+    "IDAHO": 0.06,
+    "ILLINOIS": 0.0625,
+    "INDIANA": 0.07,
+    "IOWA": 0.06,
+    "KANSAS": 0.065,
+    "KENTUCKY": 0.06,
+    "LOUISIANA": 0.0445,
+    "MAINE": 0.055,
+    "MARYLAND": 0.06,
+    "MASSACHUSETTS": 0.0625,
+    "MICHIGAN": 0.06,
+    "MINNESOTA": 0.06875,
+    "MISSISSIPPI": 0.07,
+    "MISSOURI": 0.04225,
+    "MONTANA": 0.00,
+    "NEBRASKA": 0.055,
+    "NEVADA": 0.0685,
+    "NEW HAMPSHIRE": 0.00,
+    "NEW JERSEY": 0.06625,
+    "NEW MEXICO": 4.875,
+    "NEW YORK": 0.04,
+    "NORTH CAROLINA": 0.0475,
+    "NORTH DAKOTA": 0.05,
+    "OHIO": 0.0575,
+    "OKLAHOMA": 0.0450,
+    "OREGON": 0.00,
+    "PENNSYLVANIA": 0.06,
+    "RHODE ISLAND": 0.07,
+    "SOUTH CAROLINA": 0.06,
+    "SOUTH DAKOTA": 0.0420,
+    "TENNESSEE": 0.07,
+    "TEXAS": 0.0625,
+    "UTAH": 0.0610,
+    "VERMONT": 0.06,
+    "VIRGINIA": 0.0530,
+    "WASHINGTON": 0.065,
+    "WEST VIRGINIA": 0.06,
+    "WISCONSIN": 0.05,
+    "WYOMING": 0.04,
+    "DISTRICT OF COLUMBIA": 0.06,
+}
 
 # Dictionary of Items for Sale
 produce = {
@@ -178,12 +231,20 @@ aisles = {
 # Define function to calculate total cost
 def calculate_total_cost(shopping_cart, prompt_aisle):
     subtotal = sum(aisles[prompt_aisle][item] * quantity for item, quantity in shopping_cart.items())
-    sales_tax = round(subtotal * SALES_TAX_RATE, 4)
+    sales_tax = round(subtotal * SALES_TAX_RATE[State], 4)
     total_cost = subtotal + sales_tax
     return subtotal, sales_tax, total_cost
 
 # Display the Catalog to the User
-print("Welcome to the Grocery Store.\n")
+print("""
+                                                                                    _______________________
+                                                                                    |                     |
+                                                                                    |                     |
+                                                                                    |       Welcome       |
+                                                                                    |                     |
+                                                                                    |_____________________|
+
+""")
 
 while True:
     prompt_aisle = input("What aisle would you like to go to? Produce, Beverages, Bakery, Dairy, Deli, Snacks, or Frozen. Enter: ").upper()
@@ -254,7 +315,7 @@ while option != 0:
                     except ValueError:
                         print("Invalid input! Please enter a valid quantity.")
         else:
-            print("\nSorry, that item is not available in this aisle or you mispelled the item.\n")
+            print("\nSorry, that item is not available in this aisle or you misspelled the item.\n")
     elif option == 2:
         # Remove item functionality
         item = input("Enter an item: ").upper()
@@ -263,13 +324,14 @@ while option != 0:
             print(f"We have removed {item.lower()} from the cart.")
         else:
             print("Item not found in the shopping cart, perhaps you mispelled it.")
+
     elif option == 3:
         # View Basket functionality
         if not shopping_cart:
             print("Your cart is empty :(")
         else:
             # Calculate the total cost
-            subtotal, sales_tax, total_cost = calculate_total_cost(shopping_cart, prompt_aisle)
+            subtotal = sum(aisles[prompt_aisle][item] * quantity for item, quantity in shopping_cart.items())
 
             # Display the shopping cart items and their prices
             print("Shopping cart:")
@@ -278,8 +340,6 @@ while option != 0:
 
             # Display subtotal, sales tax, and total cost
             print(f"Subtotal: ${subtotal:.2f}")
-            print(f"Sales Tax ({SALES_TAX_RATE * 100}%): ${sales_tax:.4f}")
-            print(f"Total Cost: ${total_cost:.2f}")
 
     # View aisles again without scrolling
     elif option == 4:
@@ -303,11 +363,17 @@ while option != 0:
             print("Invalid input! Please enter a number.")
 
 # Calculate and display the total cost before exiting the program
-if shopping_cart:
-    subtotal, sales_tax, total_cost = calculate_total_cost(shopping_cart, prompt_aisle)
-    print("\nThank you for shopping with us!")
-    print(f"Subtotal: ${subtotal:.2f}")
-    print(f"Sales Tax ({SALES_TAX_RATE * 100}%): ${sales_tax:.4f}")
-    print(f"Total Cost: ${total_cost:.2f}")
-else:
-    print("\nThank you for visiting. Your cart is empty.")
+while True:
+    State = input("Please enter the state you are currently in. Enter: ").upper()
+    if State in SALES_TAX_RATE:
+        if shopping_cart:
+            subtotal, sales_tax, total_cost = calculate_total_cost(shopping_cart, prompt_aisle)
+            print("\nThank you for shopping with us!")
+            print(f"Subtotal: ${subtotal:.2f}")
+            print(f"Sales Tax ({SALES_TAX_RATE[State] * 100}%): ${sales_tax:.4f}")
+            print(f"Total Cost: ${total_cost:.2f}")
+            break
+        else:
+            print("\nThank you for visiting. Your cart is empty.")
+    else:
+        print("\nSorry that is not a state, or perhaps you misspelled it.\n")
