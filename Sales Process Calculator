@@ -55,179 +55,183 @@ SALES_TAX_RATE = {
 }
 
 # Dictionary of Items for Sale
-produce = {
-    "BANANA": 0.35,
-    "APPLE": 1.50,
-    "ORANGE": 0.75,
-    "STRAWBERRIES": 4.00,
-    "GRAPES": 4.00,
-    "MANGO": 3.00,
-    "PINEAPPLE": 4.00,
-    "WATERMELON": 5.00,
-    "CANTALOUPE": 3.50,
-    "BLUEBERRIES": 5.00,
-    "TOMATO": 1.50,
-    "LETTUCE": 2.50,
-    "CARROT": 1.50,
-    "BROCCOLI": 2.50,
-    "POTATO": 0.50,
-    "ONION": 1.00,
-    "BELL PEPPER": 1.50,
-    "AVOCADO": 2.00,
-    "CUCUMBER": 1.00,
-    "SPINACH": 3.00,
+
+bakery = {
+    "BAGEL": 6.00,    
+    "BAGUETTE": 2.50,
+    "BRIOCHE": 4.00,
+    "CAKE": 15.00,
+    "CANNOLI": 4.00,
+    "CHEESECAKE": 11.00,
+    "CINNAMON ROLL": 3.00,
+    "COOKIES": 6.00,
+    "CROISSANT": 8.00,
+    "CUPCAKE": 5.00,
+    "CUSTARD": 5.00,
+    "DONUT": 2.00,
+    "FRENCH BREAD": 3.50,
+    "FRUIT TART": 3.00,
+    "LEMON BAR": 2.50,
+    "MACARON": 3.00,
+    "MOON CAKES": 3.50,
+    "MUFFIN": 2.00,
+    "PIES": 12.00,
+    "PRETZEL": 1.50,
 }
 
 beverages = {
-    "WATER": 1.50,
-    "SPARKLING WATER": 3.00,
+    "ALCOHOLIC SELTZER": 4.50,    
+    "APPLE JUICE": 4.00,
+    "BEER": 10.00,
     "COCONUT WATER": 3.50,
-    "GINGER ALE": 2.25,
     "COLA": 3.00,
     "ENERGY DRINK": 4.00,
-    "ICED TEA": 3.00,
+    "ESPRESSO": 3.50,
+    "GINGER ALE": 2.25,
     "HERBAL TEA": 2.50,
-    "ORANGE JUICE": 4.00,
-    "APPLE JUICE": 4.00,
-    "JUICE BOX": 1.00,
-    "SMOOTHIE": 6.00,
-    "LEMONADE": 2.50,
-    "ICED COFFEE": 4.00,
     "HOT CHOCOLATE": 3.50,
     "HOT COFFEE": 3.50,
-    "ESPRESSO": 3.50,
+    "ICED COFFEE": 4.00,
+    "ICED TEA": 3.00,
+    "JUICE BOX": 1.00,
+    "LEMONADE": 2.50,
+    "ORANGE JUICE": 4.00,
+    "SMOOTHIE": 6.00,
+    "SPARKLING WATER": 3.00,
+    "WATER": 1.50,
     "WINE": 15.00,
-    "BEER": 10.00,
-    "ALCOHOLIC SELTZER": 4.50,
-}
-
-bakery = {
-    "FRENCH BREAD": 3.50,
-    "BAGUETTE": 2.50,
-    "CROISSANT": 8.00,
-    "BAGEL": 6.00,
-    "BRIOCHE": 4.00,
-    "PRETZEL": 1.50,
-    "CUPCAKE": 5.00,
-    "CANNOLI": 4.00,
-    "MACARON": 3.00,
-    "CINNAMON ROLL": 3.00,
-    "MUFFIN": 2.00,
-    "MOON CAKES": 3.50,
-    "COOKIES": 6.00,
-    "DONUT": 2.00,
-    "CUSTARD": 5.00,
-    "PIES": 12.00,
-    "CHEESECAKE": 11.00,
-    "CAKE": 15.00,
-    "LEMON BAR": 2.50,
-    "FRUIT TART": 3.00,
 }
 
 dairy = {
-    "MILK": 4.50,
-    "STRAWBERRY MILK": 4.00,
-    "CHOCOLATE MILK": 4.50,
-    "OAT MILK": 4.00,
     "ALMOND MILK": 3.50,
-    "CONDENSNED MILK": 3.00,
     "BUTTER": 4.00,
-    "WHIPPED BUTTER": 4.00,
     "CHEDDAR CHEESE": 3.00,
+    "CHOCOLATE MILK": 4.50,
+    "COFFEE CREAMER": 2.50,
+    "CONDENSNED MILK": 3.00,
     "COTTAGE CHEESE": 2.50,
     "CREAM CHEESE": 3.00,
-    "PARMESAN CHEESE": 6.00,
-    "GOUDA CHEESE": 7.00,
-    "FETA CHEESE": 6.00,
     "EGGS": 5.00,
-    "YOGURT": 2.50,
+    "FETA CHEESE": 6.00,
+    "GOUDA CHEESE": 7.00,
     "GREEK YOGURT": 3.00,
+    "MILK": 4.50,
+    "OAT MILK": 4.00,
+    "PARMESAN CHEESE": 6.00,
     "SOUR CREAM": 2.50,
+    "STRAWBERRY MILK": 4.00,
+    "WHIPPED BUTTER": 4.00,
     "WHIPPED CREAM": 3.50,
-    "COFFEE CREAMER": 2.50,
+    "YOGURT": 2.50,
 }
 
 deli = {
-    "CHICKEN BREAST": 5.00,
-    "CHICKEN THIGH": 4.00,
-    "GROUND BEEF": 6.00,
+    "BACON": 7.00,    
     "BEEF SIRLOIN": 9.00,
     "BEEF TENDERLOIN": 15.00,
-    "VEAL CUTLET": 14.00,
+    "CANNED TUNA": 3.00,
+    "CHICKEN BREAST": 5.00,
+    "CHICKEN THIGH": 4.00,
+    "CRAB": 15.00,    
+    "GROUND BEEF": 6.00,
+    "GROUND TURKEY": 5.00,    
+    "HAM": 5.00,
+    "HAM WRAP": 5.00,    
+    "HOT DOG": 4.00,
+    "LAMB CHOP": 12.00,
     "PORK CHOP": 5.50,
     "PORK RIBS": 7.00,
-    "BACON": 7.00,
-    "HAM": 5.00,
-    "HOT DOG": 4.00,
-    "HAM WRAP": 5.00,
-    "SUSHI": 12.00,
-    "CRAB": 15.00,
-    "CANNED TUNA": 3.00,
     "SHRIMP": 15.00,
+    "SUSHI": 12.00,
     "TURKEY": 4.50,
     "TURKEY WRAP": 5.00,
-    "GROUND TURKEY": 5.00,
-    "LAMB CHOP": 12.00,
+    "VEAL CUTLET": 14.00,
+}
+
+
+
+frozen = {
+    "FROZEN BANANNAS": 3.50,
+    "FROZEN BLUEBERRIES": 4.00,
+    "FROZEN BROCCOLI": 3.00,
+    "FROZEN BURRITO": 2.50,
+    "FROZEN CARROTS": 3.00,
+    "FROZEN CHICKEN NUGGETS": 5.00,
+    "FROZEN CHICKEN WINGS": 8.00,
+    "FROZEN DINNER": 5.00,
+    "FROZEN DUMPLINGS": 6.00,
+    "FROZEN FISH FILET": 5.00,
+    "FROZEN FRENCH FRIES": 3.50,
+    "FROZEN MANGOS": 4.00,
+    "FROZEN MEATBALLS": 6.00,
+    "FROZEN PIZZA": 8.00,
+    "FROZEN SHRIMP": 10.00,
+    "FROZEN STRAWBERRIES": 4.00,
+    "FROZEN TAQUITOS": 5.00,
+    "FROZEN WAFFLES": 4.50,
+    "ICE CREAM": 5.00,
+    "POPSICLE": 1.00,
+}
+
+produce = {
+    "APPLE": 1.50,
+    "AVOCADO": 2.00,
+    "BANANA": 0.35,
+    "BELL PEPPER": 1.50,
+    "BLUEBERRIES": 5.00,
+    "BROCCOLI": 2.50,
+    "CANTALOUPE": 3.50,
+    "CARROT": 1.50,
+    "CUCUMBER": 1.00,
+    "GRAPES": 4.00,
+    "LETTUCE": 2.50,
+    "MANGO": 3.00,
+    "ONION": 1.00,
+    "ORANGE": 0.75,
+    "PINEAPPLE": 4.00,    
+    "POTATO": 0.50,
+    "SPINACH": 3.00,
+    "STRAWBERRIES": 4.00,
+    "TOMATO": 1.50,
+    "WATERMELON": 5.00,
 }
 
 snacks = {
-    "POTATO CHIPS": 3.50,
-    "VEGGIE CHIPS": 2.50,
-    "TORTILLA CHIPS": 3.50,
-    "POPCORN": 2.50,
-    "PRETZELS": 3.00,
-    "TRAIL MIX": 5.00,
-    "NUTS": 6.00,
-    "CHOCOLATE BAR": 2.50,
-    "PROTEIN BAR": 4.00,
-    "GRANOLA BAR": 3.00,
-    "CRACKERS": 3.50,
-    "CHEEZE CRACKERS": 2.00,
-    "RICE CRACKERS": 4.00,
     "BEEF JERKY": 7.00,
     "BEEF STICK": 4.00,
-    "FRUIT SNACK": 1.00,
-    "FRUIT LEATHER": 2.00,
-    "FRUIT CUP": 1.50,
-    "SALSA": 3.50,
+    "CHEEZE CRACKERS": 2.00,
+    "CHOCOLATE BAR": 2.50,
+    "CRACKERS": 3.50,
     "DRIED SEAWEED": 3.00,
-}
-
-frozen = {
-    "FROZEN PIZZA": 8.00,
-    "FROZEN BROCCOLI": 3.00,
-    "FROZEN CARROTS": 3.00,
-    "FROZEN MANGOS": 4.00,
-    "FROZEN BANANNAS": 3.50,
-    "FROZEN BLUEBERRIES": 4.00,
-    "FROZEN STRAWBERRIES": 4.00,
-    "ICE CREAM": 5.00,
-    "POPSICLE": 1.00,
-    "FROZEN CHICKEN NUGGETS": 5.00,
-    "FROZEN CHICKEN WINGS": 8.00,
-    "FROZEN FISH FILET": 5.00,
-    "FROZEN FRENCH FRIES": 3.50,
-    "FROZEN BURRITO": 2.50,
-    "FROZEN SHRIMP": 10.00,
-    "FROZEN DINNER": 5.00,
-    "FROZEN WAFFLES": 4.50,
-    "FROZEN DUMPLINGS": 6.00,
-    "FROZEN MEATBALLS": 6.00,
-    "FROZEN TAQUITOS": 5.00,
+    "FRUIT CUP": 1.50,
+    "FRUIT LEATHER": 2.00,
+    "FRUIT SNACK": 1.00,
+    "GRANOLA BAR": 3.00,
+    "NUTS": 6.00,
+    "POPCORN": 2.50,
+    "POTATO CHIPS": 3.50,
+    "PRETZELS": 3.00,
+    "PROTEIN BAR": 4.00,
+    "RICE CRACKERS": 4.00,
+    "SALSA": 3.50,
+    "TORTILLA CHIPS": 3.50,
+    "TRAIL MIX": 5.00,
+    "VEGGIE CHIPS": 2.50,
 }
 
 # Define aisles dictionary
 aisles = {
-    "PRODUCE": produce,
+    "BAKERY": bakery,    
     "BEVERAGES": beverages,
-    "BAKERY": bakery,
     "DAIRY": dairy,
     "DELI": deli,
-    "SNACKS": snacks,
-    "FROZEN": frozen
+    "FROZEN": frozen,
+    "PRODUCE": produce,    
+    "SNACKS": snacks
 }
 
 # Define function to calculate total cost
+
 def calculate_total_cost(shopping_cart, prompt_aisle):
     subtotal = sum(aisles[prompt_aisle][item] * quantity for item, quantity in shopping_cart.items())
     sales_tax = round(subtotal * SALES_TAX_RATE[State], 4)
@@ -235,6 +239,7 @@ def calculate_total_cost(shopping_cart, prompt_aisle):
     return subtotal, sales_tax, total_cost
 
 # Display the Catalog to the User
+
 print("""
                                                                             _______________________
                                                                             |                     |
@@ -246,7 +251,7 @@ print("""
 """)
 
 while True:
-    prompt_aisle = input("What aisle would you like to go to? Produce, Beverages, Bakery, Dairy, Deli, Snacks, or Frozen. Enter: ").upper()
+    prompt_aisle = input("What aisle would you like to go to? Bakery, Beverages, Dairy, Deli, Frozen, Produce, or Snacks. Enter: ").upper()
 
     if prompt_aisle in aisles:
         print(f'\nThis is the {prompt_aisle.lower()} aisle.')
@@ -260,9 +265,11 @@ while True:
         print("\nSorry we don't have that aisle, or you spelled the aisle wrong.\n")
 
 # Initialize shopping cart
+
 shopping_cart = {}
 
 # Shopping cart options
+
 print("""
 Shopping Cart Options
 ----------------------
@@ -274,6 +281,7 @@ Shopping Cart Options
 """)
 
 # Get the initial option from the user
+
 while True:
     try:
         option = int(input("Enter an Option: "))
@@ -285,6 +293,7 @@ while True:
         print("Invalid input! Please enter a number.")
 
 # Displaying options
+
 while option != 0:
     if option == 1:
         # Add item functionality
@@ -315,6 +324,7 @@ while option != 0:
                         print("Invalid input! Please enter a valid quantity.")
         else:
             print("\nSorry, that item is not available in this aisle or you misspelled the item.\n")
+    
     elif option == 2:
         # Remove item functionality
         while True:
@@ -347,6 +357,7 @@ while option != 0:
             print(f"Subtotal: ${subtotal:.2f}")
 
     # View aisles again without scrolling
+    
     elif option == 4:
         if prompt_aisle in aisles:
             print(f'\nThis is the {prompt_aisle.lower()} aisle.')
@@ -356,8 +367,8 @@ while option != 0:
                 else:
                     print(f"Price for {item} is not valid.")
     
-
     # Get the next option from the user
+    
     while True:
         try:
             option = int(input("\n\nEnter an option: "))
@@ -369,6 +380,7 @@ while option != 0:
             print("Invalid input! Please enter a number.")
 
 # Calculate and display the total cost before exiting the program
+
 while True:
     State = input("Please enter the state you are currently in. Enter: ").upper()
     if State in SALES_TAX_RATE:
